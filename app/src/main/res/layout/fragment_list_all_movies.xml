@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gihan.movies.Fragment.ListAllMovies">
+
+    <include
+        android:id="@+id/all_movies_tool_bar"
+        layout="@layout/tool_bar_layout" />
+
+    <GridView
+        android:id="@+id/grid_view_movies"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/all_movies_tool_bar"></GridView>
+
+</RelativeLayout>

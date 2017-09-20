@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gihan.movies.Fragment.MovieDetailFragment">
+
+    <ImageView
+        android:layout_width="156dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/aya"
+        android:id="@+id/movie_detail_image_view"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="1dp"
+        android:id="@+id/movie_detail_over_view"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/movie_detail_vote_average"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="85dp"
+        android:id="@+id/movie_detail_release_data"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="120dp"
+        android:id="@+id/movie_detail_original_title"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/favourite_button"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="160dp"
+        android:text="Favourite"
+        android:textSize="18dp"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/review_list"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/favourite_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView"></ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorAccent"
+        android:layout_above="@+id/trailer_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/trailer_view"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></ListView>
+
+
+
+</RelativeLayout>
